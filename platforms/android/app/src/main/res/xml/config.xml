@@ -13,6 +13,13 @@
         <param name="android-package" value="com.nordnetab.cordova.ul.UniversalLinksPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>My App</name>
     <description>        A basic Vue.js + Framework7 template for PhoneGap.    </description>
     <author email="tommy@devgeeks.org" href="http://phonegap.com">        Adobe PhoneGap Team    </author>
@@ -48,4 +55,5 @@
     <preference name="StatusBarStyle" value="default" />
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
 </widget>

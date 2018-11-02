@@ -33,7 +33,8 @@ export default {
     methods: {
         login() {
             let provider = new firebase.auth.FacebookAuthProvider();
-            firebase.auth().signInWithRedirect(provider).then(function () {
+            firebase.auth().signInWithRedirect(provider).then(function (signin) {
+                console.log(signin)
                 return firebase.auth().getRedirectResult();
             }).then(function (result) {
                 // This gives you a Google Access Token.
@@ -51,7 +52,9 @@ export default {
             });
         },
         logout() {
-            firebase.auth().signOut().then(function () {
+            firebase.auth().signOut().then(function (signout) {
+                console.log('signout')
+                console.log(signout)
                 alert('signouted')
             }).catch(function (error) {
                 // An error happened.

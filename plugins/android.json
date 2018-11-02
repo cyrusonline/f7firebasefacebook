@@ -18,6 +18,12 @@
     },
     "cordova-universal-links-plugin": {
       "PACKAGE_NAME": "com.abc.applogin"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.abc.applogin"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.abc.applogin"
     }
   },
   "dependent_plugins": {}
